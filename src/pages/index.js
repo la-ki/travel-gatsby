@@ -5,6 +5,7 @@ import Hero from "../components/Hero"
 import Banner from "../components/Banner"
 import About from "../components/Home/About";
 import Services from '../components/Home/Services';
+
 export default () => (
   <>
     <Layout>
@@ -17,6 +18,7 @@ export default () => (
         </Banner>
       </Hero>
       <About />
+      <Services />
     </Layout>
   </>
 )
