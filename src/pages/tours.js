@@ -6,14 +6,14 @@ import { graphql } from "gatsby"
 function tours({data}) {
   return (
     <Layout>
-      <StyledHero />
+      <StyledHero img={data.toursHero.childImageSharp.fluid} />
     </Layout>
   )
 }
 
 export const query = graphql`
   query {
-    homeHero: file(relativePath: { eq: "hero-img.jpg" }) {
+    toursHero: file(relativePath: { eq: "tours-hero.jpg" }) {
       childImageSharp {
         fluid(quality: 90, maxWidth: 4160) {
           ...GatsbyImageSharpFluid_withWebp
