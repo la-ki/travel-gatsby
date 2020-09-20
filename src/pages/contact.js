@@ -3,11 +3,13 @@ import StyledHero from '../components/StyledHero';
 import {graphql} from 'gatsby';
 
 import Layout from '../components/Layout';
+import Contact from '../components/Contact/Contact';
 
 function contact({data}) {
     return (
         <Layout>
             <StyledHero img={data.contactHero.childImageSharp.fluid} />
+            <Contact />
         </Layout>
     )
 }

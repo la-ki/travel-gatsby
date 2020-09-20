@@ -1,11 +1,10 @@
 import React from "react"
-import styled from 'styled-components';
-
-function Title({ title, subtitle, className }) {
+import styled from "styled-components"
+const Title = ({ title, subtitle, className }) => {
   return (
     <div className={className}>
       <h4>
-        <span className={className}>{title}</span>
+        <span className="title">{title}</span>
         <span>{subtitle}</span>
       </h4>
     </div>
@@ -34,4 +33,3 @@ export default styled(Title)`
     }
   }
 `
-
