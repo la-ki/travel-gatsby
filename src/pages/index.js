@@ -11,7 +11,7 @@ export default ({data}) => (
     <Layout>
       <StyledHero home="true" img={data.homeHero.childImageSharp.fluid}>
         <Banner
-          title="peek into backroads"
+          title="peek into travellroads"
           info="We believe that traveling under your own power and at your own pace opens up an opportunity to connect more meaningfully with the world."
         >
         <AniLink fade to="/tours" className="btn-white">explore more</AniLink>
