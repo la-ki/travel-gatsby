@@ -16,7 +16,7 @@ function contact({data}) {
 
 export const query = graphql`
 query {
-  contactHero: file(relativePath: {eq: "contact-hero.jpg"}) {
+  contactHero:file(relativePath: {eq:"contact-hero.jpg"}) {
     childImageSharp {
       fluid(quality: 90, maxWidth: 4160) {
         ...GatsbyImageSharpFluid_withWebp

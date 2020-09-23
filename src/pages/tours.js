@@ -1,12 +1,14 @@
 import React from "react"
 import Layout from "../components/Layout"
-import StyledHero from "../components/StyledHero"
+import StyledHero from "../components/StyledHero";
+import Tours from '../components/Tours/Tours';
 import { graphql } from "gatsby"
 
 function tours({data}) {
   return (
     <Layout>
       <StyledHero img={data.toursHero.childImageSharp.fluid} />
+      <Tours />
     </Layout>
   )
 }
