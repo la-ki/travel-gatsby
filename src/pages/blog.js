@@ -3,11 +3,13 @@ import StyledHero from '../components/StyledHero';
 import {graphql} from 'gatsby';
 
 import Layout from '../components/Layout';
+import BlogList from '../components/Blog/BlogList';
 
 function blog({data}) {
     return (
         <Layout>
             <StyledHero img={data.blogHero.childImageSharp.fluid} />
+            <BlogList />
         </Layout>
     )
 }
